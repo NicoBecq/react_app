@@ -9,7 +9,18 @@ use Symfony\Component\Security\Core\User\UserInterface;
 
 /**
  * @ORM\Entity(repositoryClass=UserRepository::class)
- * @ApiResource()
+ * @ApiResource(
+ *     attributes={
+ *          swaggerContext={}
+ *     },
+ *     collectionOperations={
+ *          "get",
+ *          "post"={"security"="is_granted('ROLE_ADMIN')"}
+ *      },
+ *     itemOperations={
+ *          "GET"={"security"="is_granted('ROLE_USER')"}
+ *      },
+ * )
  */
 class User implements UserInterface
 {

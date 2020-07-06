@@ -46,7 +46,7 @@ export default class CustomerForm extends Component {
                     </div>
                     <div className="text-right">
                         <button className="btn btn-success ">
-                            <i className="fa fa-plus-square mr-2"></i>
+                            <i className="fa fa-plus-square mr-2"/>
                             Ajouter
                         </button>
                     </div>
