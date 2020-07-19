@@ -10,9 +10,6 @@ use Symfony\Component\Security\Core\User\UserInterface;
 /**
  * @ORM\Entity(repositoryClass=UserRepository::class)
  * @ApiResource(
- *     attributes={
- *          swaggerContext={}
- *     },
  *     collectionOperations={
  *          "get",
  *          "post"={"security"="is_granted('ROLE_ADMIN')"}

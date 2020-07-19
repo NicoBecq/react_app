@@ -2,3 +2,10 @@ api_platform:
     resource: .
     type: api_platform
     prefix: /api
+
+#    resource:
+#        App\Entity\Test:
+#            collectionOperations:
+#                get: ~
+#            itemOperations:
+#                get: ~
